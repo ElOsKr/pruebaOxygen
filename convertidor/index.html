@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Oscar Alcivar">
+	<link rel="stylesheet" href="./css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://css.gg/swap.css' rel='stylesheet'>
+    <link href='https://css.gg/heart.css' rel='stylesheet'>
+    <script src="./js/main.js"></script>
+    <title>Convertidor</title>
+</head>
+<body>
+    <header class="centrado">
+        <i class="gg-swap"></i>
+        <p>Unit converter</p>
+    </header>
+    <main>
+        <div id="conversor">
+            <div class="conversor-header">Convert</div>
+            <div class="conversor-main">
+                <select id="datosConversion" class="conversor-select">
+                    <option value="km-mi" selected>Kilometros → Millas</option>
+                    <option value="mi-km">Millas → Kilometros</option>
+                    <option value="ft-m ">Pies → Metros</option>
+                    <option value="m -ft">Metros → Pies</option>
+                    <option value="cm-in">Centímetros → Pulgadas</option>
+                    <option value="in-cm">Pulgadas → Centímetros</option>
+                </select>
+                <button class="boton" id="revertir"><i class="gg-swap"></i></button>
+                <input type="number" id="datoIntroducido">
+                <span id="formatoIntroducido"></span>
+            </div>
+            <div class="conversor-footer">
+                <button class="boton" id="guardar"><i class="gg-heart"></i></button>
+                <div>
+                    <span id="resultadoConversion"></span>
+                    <span id="formatoConversion"></span>                    
+                </div>
+            </div>
+        </div>
+        <div id="guardados">
+            <p>Saved</p>
+            <div id="datosGuardados">
+            </div>
+        </div>
+    </main>
+    <footer class="centrado">
+        <a href="#">Terms of Service</p>
+        <a href="#">Privacy policy</p>
+    </footer>
+</body>
+</html>

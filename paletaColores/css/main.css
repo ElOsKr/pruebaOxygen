@@ -1,0 +1,215 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: #2C2C2C;
+}
+
+.centrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centrado .fa-palette{
+    margin-right: 10px;
+}
+
+.circulos{
+    margin: 30px 0 30px 0;
+    height: 100px;
+}
+
+.error{
+    color: red;
+}
+
+.borrar{
+    background: none;
+    border: none;
+    color: white;
+    font-size: medium;
+}
+
+.circuloVacio, .circuloVacio-focus{
+    margin: 0 10px 0 10px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 35px;
+    font-weight: lighter;
+    color: white;    
+}
+
+.circuloVacio {
+    height: 55px;
+    width: 55px;
+    background: linear-gradient(135.00deg, #404040 17.47%, #404040 27.71%,
+    #B0B0B0 27.72%, #B0B0B0 36.75%, #404040 36.76%, #404040 45.49%,
+    #B0B0B0 45.5%, #B0B0B0 54.23%, #404040 54.24%, #404040 63.27%,
+    #B0B0B0 63.27%, #B0B0B0 71.71%, #404040 71.71%);  
+}
+
+.circuloVacio-focus{
+    box-shadow: 1px 1px 3px 2px rgb(255, 255, 255);
+    height: 65px;
+    width: 65px;
+}
+
+.colores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectorLleno{
+    margin-right: 20px;
+}
+
+.selectorLleno .clr-field button{
+    width: 100%;
+    height: 100%;
+}
+
+.selectorColores{
+    width: 172px;
+    height: 40px;
+}
+
+.selectorColores:focus{
+    outline: none;
+}
+
+.selectorColores:hover, button:hover{
+    cursor: pointer;
+}
+.nombrePaleta{
+    font-size: 15px;
+    text-align: start;
+}
+
+.nombrePaleta input{
+    background: none;
+    border: 2px solid white;
+    border-radius: 3px;
+    color:white;
+}
+
+.nombrePaleta button{
+    width: 45px;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+}
+
+#agregarPaleta{
+    border-radius: 5px;
+}
+
+#guardados{
+    margin-top: 30px;
+    width: 70%;
+    margin: 10px auto;
+    text-align: start;
+}
+
+#datosGuardados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dato{
+    width: 350px;
+    font-size: 15px;
+    margin: 0 10px 0 10px;
+}
+
+.dato p{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.datosColores{
+    width: 100%;    
+    height: 50px;
+    background-color: #151515;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circuloRelleno {
+    height: 35px;
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    background: linear-gradient(135.00deg, #404040 17.47%, #404040 27.71%,
+    #B0B0B0 27.72%, #B0B0B0 36.75%, #404040 36.76%, #404040 45.49%,
+    #B0B0B0 45.5%, #B0B0B0 54.23%, #404040 54.24%, #404040 63.27%,
+    #B0B0B0 63.27%, #B0B0B0 71.71%, #404040 71.71%);  
+    margin: 0 10px 0 10px;
+}
+
+@media screen and (max-width: 925px) {
+    .colores{
+        display: block;
+    }
+
+    .nombrePaleta{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #datosGuardados{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .dato{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main{
+        width: 100%;
+        text-align: center;
+    }
+    .circuloVacio{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .circuloVacio:focus{
+        height: 50px;
+        width: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .circuloVacio{
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    .circuloVacio:focus{
+        height: 45px;
+        width: 45px;
+    }
+}
