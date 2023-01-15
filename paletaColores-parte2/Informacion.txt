@@ -1,0 +1,6 @@
+Para la parte de la conexion a la base de datos he usado php.
+En el script esta todo lo necesario para la creacion de la base y la tabla.
+Los datos entre javascript y php se han enviado como json.
+Los colores se han guardado como rgb pero en mysql les he tenido que
+añadir una cadena antes de guardarlos en la tabla porque al ser 
+rgb eso modificaba el color de esa celda y no guardaba los datos.
